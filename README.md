@@ -1,5 +1,7 @@
 # Sillabe
 
+Play it at [sillabe.michelecopelli.it](https://sillabe.michelecopelli.it).
+
 Sillabe is a small web game that helps young children take their first steps in
 reading Italian with the syllabic method: vowels first, then one consonant at a
 time combined with the vowels into syllables, then short words built from the
