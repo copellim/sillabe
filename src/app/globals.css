@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  /* Rounded font (loaded through next/font in layout.tsx) */
+  --font-sans: var(--font-nunito), ui-rounded, "Segoe UI", system-ui, sans-serif;
+
+  /* Pastel palette per unit */
+  --color-vocali: #fff3d1;
+  --color-vocali-accent: #ffb347;
+  --color-sillabe-m: #d1eeff;
+  --color-sillabe-m-accent: #5ba3d9;
+  --color-sillabe-p: #ffd1e8;
+  --color-sillabe-p-accent: #e88baf;
+  --color-sillabe-l: #d1ffd6;
+  --color-sillabe-l-accent: #6bc96f;
+  --color-sillabe-t: #e8d1ff;
+  --color-sillabe-t-accent: #9b72cf;
+  --color-sillabe-n: #ffe0cc;
+  --color-sillabe-n-accent: #e8935a;
+  --color-sillabe-s: #ccffe8;
+  --color-sillabe-s-accent: #4db89a;
+  --color-parole: #fdf0c8;
+  --color-parole-accent: #ffd700;
+
+  /* Text */
+  --color-ink: #4a3b2a;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  /* Soft base gradient background (vowels unit) */
+  background: linear-gradient(160deg, #fff8e6 0%, var(--color-vocali) 100%);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  /* Avoid annoying text selection and long-press menus on touch during play */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+/* Soft decorative bubbles in the background: depth without distracting from play.
+   They float very slowly and stay still with reduced motion. */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -20;
+  border-radius: 9999px;
+  filter: blur(40px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+body::before {
+  top: -6rem;
+  left: -6rem;
+  width: 18rem;
+  height: 18rem;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.9), transparent 70%);
+  /* Still while listening. */
+}
+
+body::after {
+  bottom: -8rem;
+  right: -6rem;
+  width: 22rem;
+  height: 22rem;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.7), transparent 70%);
+  /* Still while listening. */
+}
+
+@keyframes float-a {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(2rem, 1.5rem);
+  }
+}
+
+@keyframes float-b {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-2rem, -1.5rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after {
+    animation: none;
+  }
+}
+
+/* Portrait-only: the notice is hidden by default, shown only in landscape */
+.landscape-warning {
+  display: none;
+}
+
+@media (orientation: landscape) and (max-height: 600px) {
+  .landscape-warning {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: var(--color-vocali);
+    color: var(--color-ink);
+  }
+
+  .app-shell {
+    /* Hide the game when the device is in landscape */
+    display: none;
+  }
+}
+
+/* Child-facing activities: three focal areas, stable layout, dark type. */
+.game-page { display: flex; flex: 1; flex-direction: column; align-items: center; padding: max(12px, env(safe-area-inset-top)) 20px max(24px, env(safe-area-inset-bottom)); gap: 8px; }
+.quiet-button { min-width: 48px; min-height: 48px; display: inline-flex; align-items: center; justify-content: center; border-radius: 18px; background: #ffffffb8; color: var(--color-ink); font-weight: 700; }
+.focus-tile { display: flex; align-items: center; justify-content: center; min-width: 180px; min-height: 150px; padding: 16px; background: white; border-radius: 32px; box-shadow: 0 5px 0 #00000012, 0 8px 20px #0000000c; font-size: clamp(56px, 18vw, 88px); font-weight: 800; }
+button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible { outline: 3px solid #416d88; outline-offset: 4px; }

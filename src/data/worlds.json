@@ -1,0 +1,494 @@
+{
+  "units": [
+    {
+      "id": "vocali",
+      "name": "Le Vocali",
+      "color": "#FFF3D1",
+      "accent": "#FFB347",
+      "lessons": [
+        {
+          "id": "vocali-1",
+          "exercises": [
+            { "type": "letter", "target": "A" },
+            { "type": "letter", "target": "E" },
+            { "type": "letter", "target": "I" }
+          ]
+        },
+        {
+          "id": "vocali-2",
+          "exercises": [
+            { "type": "letter", "target": "O" },
+            { "type": "letter", "target": "U" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m",
+      "name": "La lettera M",
+      "color": "#D1EEFF",
+      "accent": "#5BA3D9",
+      "lessons": [
+        {
+          "id": "m-1",
+          "exercises": [
+            { "type": "intro", "target": "M" },
+            { "type": "syllable", "target": "MA" },
+            { "type": "syllable", "target": "MO" },
+            {
+              "type": "word",
+              "target": "AMO",
+              "syllables": ["A", "MO"],
+              "syllableDistractors": ["MA", "O"]
+            }
+          ]
+        },
+        {
+          "id": "m-2",
+          "exercises": [
+            { "type": "syllable", "target": "ME" },
+            { "type": "syllable", "target": "MI" },
+            { "type": "syllable", "target": "MU" },
+            {
+              "type": "word",
+              "target": "MIMO",
+              "syllables": ["MI", "MO"],
+              "syllableDistractors": ["MA", "ME"]
+            },
+            {
+              "type": "word",
+              "target": "EMÙ",
+              "syllables": ["E", "MU"],
+              "syllableDistractors": ["MO", "MI"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p",
+      "name": "La lettera P",
+      "color": "#FFD1E8",
+      "accent": "#E88BAF",
+      "lessons": [
+        {
+          "id": "p-1",
+          "exercises": [
+            { "type": "intro", "target": "P" },
+            { "type": "syllable", "target": "PA" },
+            { "type": "syllable", "target": "PE" },
+            {
+              "type": "word",
+              "target": "PAPÀ",
+              "syllables": ["PA", "PA"],
+              "syllableDistractors": ["PE", "MA"]
+            },
+            {
+              "type": "word",
+              "target": "APE",
+              "syllables": ["A", "PE"],
+              "syllableDistractors": ["PA", "E"]
+            }
+          ]
+        },
+        {
+          "id": "p-2",
+          "exercises": [
+            { "type": "syllable", "target": "PI" },
+            { "type": "syllable", "target": "PO" },
+            { "type": "syllable", "target": "PU" },
+            {
+              "type": "word",
+              "target": "PUPA",
+              "syllables": ["PU", "PA"],
+              "syllableDistractors": ["PO", "MA"]
+            },
+            {
+              "type": "word",
+              "target": "PUMA",
+              "syllables": ["PU", "MA"],
+              "syllableDistractors": ["PA", "MU"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ripasso-1",
+      "name": "Ripassiamo!",
+      "color": "#EDE7FF",
+      "accent": "#8E7CC3",
+      "lessons": [
+        {
+          "id": "ripasso-1-1",
+          "kind": "review",
+          "exercises": [
+            { "type": "syllable", "target": "MA" },
+            { "type": "syllable", "target": "PO" },
+            {
+              "type": "word",
+              "target": "AMO",
+              "syllables": ["A", "MO"],
+              "syllableDistractors": ["MA", "PO"]
+            },
+            {
+              "type": "word",
+              "target": "PAPÀ",
+              "syllables": ["PA", "PA"],
+              "syllableDistractors": ["MA", "PU"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l",
+      "name": "La lettera L",
+      "color": "#D1FFD6",
+      "accent": "#6BC96F",
+      "lessons": [
+        {
+          "id": "l-1",
+          "exercises": [
+            { "type": "intro", "target": "L" },
+            { "type": "syllable", "target": "LA" },
+            { "type": "syllable", "target": "LE" },
+            {
+              "type": "word",
+              "target": "ALA",
+              "syllables": ["A", "LA"],
+              "syllableDistractors": ["LE", "MA"]
+            },
+            {
+              "type": "word",
+              "target": "MELA",
+              "syllables": ["ME", "LA"],
+              "syllableDistractors": ["PE", "PA"]
+            }
+          ]
+        },
+        {
+          "id": "l-2",
+          "exercises": [
+            { "type": "syllable", "target": "LI" },
+            { "type": "syllable", "target": "LO" },
+            { "type": "syllable", "target": "LU" },
+            {
+              "type": "word",
+              "target": "PALA",
+              "syllables": ["PA", "LA"],
+              "syllableDistractors": ["MA", "LO"]
+            },
+            {
+              "type": "word",
+              "target": "LUPO",
+              "syllables": ["LU", "PO"],
+              "syllableDistractors": ["LO", "PU"]
+            },
+            {
+              "type": "word",
+              "target": "MULO",
+              "syllables": ["MU", "LO"],
+              "syllableDistractors": ["MO", "LU"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ripasso-2",
+      "name": "Ripassiamo!",
+      "color": "#EDE7FF",
+      "accent": "#8E7CC3",
+      "lessons": [
+        {
+          "id": "ripasso-2-1",
+          "kind": "review",
+          "exercises": [
+            { "type": "syllable", "target": "LE" },
+            { "type": "syllable", "target": "PA" },
+            {
+              "type": "word",
+              "target": "MELA",
+              "syllables": ["ME", "LA"],
+              "syllableDistractors": ["PA", "LO"]
+            },
+            {
+              "type": "word",
+              "target": "LUPO",
+              "syllables": ["LU", "PO"],
+              "syllableDistractors": ["MU", "LA"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t",
+      "name": "La lettera T",
+      "color": "#E8D1FF",
+      "accent": "#9B72CF",
+      "lessons": [
+        {
+          "id": "t-1",
+          "exercises": [
+            { "type": "intro", "target": "T" },
+            { "type": "syllable", "target": "TA" },
+            { "type": "syllable", "target": "TO" },
+            {
+              "type": "word",
+              "target": "MOTO",
+              "syllables": ["MO", "TO"],
+              "syllableDistractors": ["LO", "PO"]
+            },
+            {
+              "type": "word",
+              "target": "TOPO",
+              "syllables": ["TO", "PO"],
+              "syllableDistractors": ["MO", "LO"]
+            }
+          ]
+        },
+        {
+          "id": "t-2",
+          "exercises": [
+            { "type": "syllable", "target": "TE" },
+            { "type": "syllable", "target": "TI" },
+            { "type": "syllable", "target": "TU" },
+            {
+              "type": "word",
+              "target": "TELA",
+              "syllables": ["TE", "LA"],
+              "syllableDistractors": ["ME", "PA"]
+            },
+            {
+              "type": "word",
+              "target": "TUTA",
+              "syllables": ["TU", "TA"],
+              "syllableDistractors": ["MU", "PA"]
+            },
+            {
+              "type": "word",
+              "target": "PATATA",
+              "syllables": ["PA", "TA", "TA"],
+              "syllableDistractors": ["TO", "MA"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ripasso-3",
+      "name": "Ripassiamo!",
+      "color": "#EDE7FF",
+      "accent": "#8E7CC3",
+      "lessons": [
+        {
+          "id": "ripasso-3-1",
+          "kind": "review",
+          "exercises": [
+            { "type": "syllable", "target": "TO" },
+            { "type": "syllable", "target": "MA" },
+            {
+              "type": "word",
+              "target": "MOTO",
+              "syllables": ["MO", "TO"],
+              "syllableDistractors": ["LO", "PA"]
+            },
+            {
+              "type": "word",
+              "target": "PATATA",
+              "syllables": ["PA", "TA", "TA"],
+              "syllableDistractors": ["TU", "MU"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "n",
+      "name": "La lettera N",
+      "color": "#FFE0CC",
+      "accent": "#E8935A",
+      "lessons": [
+        {
+          "id": "n-1",
+          "exercises": [
+            { "type": "intro", "target": "N" },
+            { "type": "syllable", "target": "NA" },
+            { "type": "syllable", "target": "NO" },
+            {
+              "type": "word",
+              "target": "NANO",
+              "syllables": ["NA", "NO"],
+              "syllableDistractors": ["MA", "TO"]
+            },
+            {
+              "type": "word",
+              "target": "MANO",
+              "syllables": ["MA", "NO"],
+              "syllableDistractors": ["PA", "LO"]
+            }
+          ]
+        },
+        {
+          "id": "n-2",
+          "exercises": [
+            { "type": "syllable", "target": "NE" },
+            { "type": "syllable", "target": "NI" },
+            { "type": "syllable", "target": "NU" },
+            {
+              "type": "word",
+              "target": "PANE",
+              "syllables": ["PA", "NE"],
+              "syllableDistractors": ["MA", "LE"]
+            },
+            {
+              "type": "word",
+              "target": "LUNA",
+              "syllables": ["LU", "NA"],
+              "syllableDistractors": ["MU", "PA"]
+            },
+            {
+              "type": "word",
+              "target": "MONETA",
+              "syllables": ["MO", "NE", "TA"],
+              "syllableDistractors": ["NA", "TO"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ripasso-4",
+      "name": "Ripassiamo!",
+      "color": "#EDE7FF",
+      "accent": "#8E7CC3",
+      "lessons": [
+        {
+          "id": "ripasso-4-1",
+          "kind": "review",
+          "exercises": [
+            { "type": "syllable", "target": "NA" },
+            {
+              "type": "word",
+              "target": "LUNA",
+              "syllables": ["LU", "NA"],
+              "syllableDistractors": ["MU", "TO"]
+            },
+            {
+              "type": "word",
+              "target": "TOPO",
+              "syllables": ["TO", "PO"],
+              "syllableDistractors": ["NO", "MA"]
+            },
+            {
+              "type": "word",
+              "target": "MONETA",
+              "syllables": ["MO", "NE", "TA"],
+              "syllableDistractors": ["NO", "MA"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s",
+      "name": "La lettera S",
+      "color": "#CCFFE8",
+      "accent": "#4DB89A",
+      "lessons": [
+        {
+          "id": "s-1",
+          "exercises": [
+            { "type": "intro", "target": "S" },
+            { "type": "syllable", "target": "SA" },
+            { "type": "syllable", "target": "SO" },
+            {
+              "type": "word",
+              "target": "NASO",
+              "syllables": ["NA", "SO"],
+              "syllableDistractors": ["MA", "LO"]
+            },
+            {
+              "type": "word",
+              "target": "SALE",
+              "syllables": ["SA", "LE"],
+              "syllableDistractors": ["NA", "ME"]
+            }
+          ]
+        },
+        {
+          "id": "s-2",
+          "exercises": [
+            { "type": "syllable", "target": "SE" },
+            { "type": "syllable", "target": "SI" },
+            { "type": "syllable", "target": "SU" },
+            {
+              "type": "word",
+              "target": "SOLE",
+              "syllables": ["SO", "LE"],
+              "syllableDistractors": ["NO", "ME"]
+            },
+            {
+              "type": "word",
+              "target": "MUSO",
+              "syllables": ["MU", "SO"],
+              "syllableDistractors": ["LU", "NO"]
+            },
+            {
+              "type": "word",
+              "target": "SAPONE",
+              "syllables": ["SA", "PO", "NE"],
+              "syllableDistractors": ["SO", "NA"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gran-ripasso",
+      "name": "Gran Ripasso",
+      "color": "#FDF0C8",
+      "accent": "#E0A93E",
+      "lessons": [
+        {
+          "id": "gran-ripasso-1",
+          "kind": "review",
+          "exercises": [
+            {
+              "type": "word",
+              "target": "SOLE",
+              "syllables": ["SO", "LE"],
+              "syllableDistractors": ["NA", "MU"]
+            },
+            {
+              "type": "word",
+              "target": "LUNA",
+              "syllables": ["LU", "NA"],
+              "syllableDistractors": ["SO", "ME"]
+            },
+            {
+              "type": "word",
+              "target": "MANO",
+              "syllables": ["MA", "NO"],
+              "syllableDistractors": ["LE", "SU"]
+            },
+            {
+              "type": "word",
+              "target": "PATATA",
+              "syllables": ["PA", "TA", "TA"],
+              "syllableDistractors": ["TO", "SA"]
+            },
+            {
+              "type": "word",
+              "target": "SAPONE",
+              "syllables": ["SA", "PO", "NE"],
+              "syllableDistractors": ["SE", "MO"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
